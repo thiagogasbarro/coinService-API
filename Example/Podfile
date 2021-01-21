@@ -1,0 +1,6 @@
+use_frameworks!
+target 'CoinService_Tests' do
+  pod 'CoinService', :path => '../'
+  
+  
+end
