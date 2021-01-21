@@ -2,5 +2,4 @@ use_frameworks!
 target 'ServiceModule_Tests' do
   pod 'ServiceModule', :path => '../'
   
-  
 end
