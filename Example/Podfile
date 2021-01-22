@@ -1,6 +1,6 @@
 use_frameworks!
 target 'CoinService_Tests' do
   pod 'CoinService', :path => '../'
-  
+  pod 'Alamofire', '~> 4.0'
   
 end

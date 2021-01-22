@@ -32,6 +32,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'CoinService/Classes/**/*'
   
+  s.dependency 'Alamofire', '~> 4.0'
+  s.dependency 'SwiftLint'
   # s.resource_bundles = {
   #   'CoinService' => ['CoinService/Assets/*.png']
   # }

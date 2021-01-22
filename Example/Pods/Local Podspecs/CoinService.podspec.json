@@ -1,0 +1,30 @@
+{
+  "name": "CoinService",
+  "version": "0.1.0",
+  "summary": "A short description of CoinService.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/thiagogasbarro/CoinService",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "thiagogasbarro": "thiago_gasbarro@outlook.com"
+  },
+  "source": {
+    "git": "https://github.com/thiagogasbarro/CoinService.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CoinService/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 4.0"
+    ],
+    "SwiftLint": [
+
+    ]
+  }
+}

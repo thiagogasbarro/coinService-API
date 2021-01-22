@@ -1,0 +1,6 @@
+framework module CoinService {
+  umbrella header "CoinService-umbrella.h"
+
+  export *
+  module * { export * }
+}
