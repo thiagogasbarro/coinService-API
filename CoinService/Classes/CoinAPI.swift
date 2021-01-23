@@ -11,34 +11,28 @@ import CoreData
 
 class CoinAPIResquest {
 
-    let alamofireManager: SessionManager = {
-        let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 10000
-        configuration.timeoutIntervalForResource = 10000
-        
-        return SessionManager(configuration: configuration)
-    }()
 
-    struct CoinAPIURL {
-            static let apiKey: String = "FFC56E47-B89E-4FF6-98BB-06C4E5D4F279"
-            static let Main: String = "https://rest.coinapi.io/v1/exchangerate/BTC?apikey=\(apiKey)"
+    struct APIData {
+            static let Main: String = "https://rest.coinapi.io/v1"
+            static let apiKey: String = "?apikey=FFC56E47-B89E-4FF6-98BB-06C4E5D4F279"
+            static let url = "\(APIData.Main)/assets/BTC\(APIData.apiKey)"
         }
     
-    func getCoins(url: String?, completion:@escaping (_ response: ServerResponse) -> Void){
-        let page = url == "" || url == nil ? CoinAPIURL.Main : url ?? ""
-        
-        alamofireManager.request(page, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { ( response ) in
-            let statusCode = response.response?.statusCode
-            switch response.result {
-            case .success(let value):
-                print(value)
-                break
-                
-                
-                
-            case .failure(_):
-                print("erro ao retornar dados")
-            }
-            }
+func getAssetBTC(_ completion: @escaping ([CoinModel]) -> Void) {
+    
+    Alamofire.request(APIData.url, method: .get).responseJSON { ( response ) in
+        switch response.result {
+        case .success:
+            guard let dataRecovered = response.data else { return }
+            guard let start = try? JSONDecoder().decode(Coin.self, from: dataRecovered) else { return }
+            let coin = start.results
+            completion(coin)
+            print("start")
+            break
+        case .failure:
+            print(response.error!)
+            break
         }
+    }
+}
     }
