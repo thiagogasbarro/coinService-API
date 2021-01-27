@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 import CoreData
 
-class CoinAPIResquest: NSObject {
+public class CoinAPIResquest: NSObject {
 
 
     struct APIData {
@@ -20,7 +20,7 @@ class CoinAPIResquest: NSObject {
     
     let parse: ParseCoin = ParseCoin()
     
-  public func getCoin(_ completion: @escaping(_ response: ServerResponse) -> Void) {
+   public func getCoin(_ completion: @escaping(_ response: ServerResponse) -> Void) {
         
         Alamofire.request(APIData.urlAssetBTC, method: .get).responseJSON { ( dataResponse ) in
             let statusCode = dataResponse.response?.statusCode

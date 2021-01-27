@@ -5,7 +5,7 @@
 //  Created by Thiago Gasbarro Jesus on 22/01/21.
 //
 
-struct CoinModel  {
+public struct CoinModel  {
     let assetID, name: String?
     let exchangeID: String?
     let volume1HrsUsd, volume1DayUsd, volume1MthUsd, priceUsd: Double?
