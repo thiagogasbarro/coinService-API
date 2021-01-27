@@ -2,10 +2,8 @@
 //  ServerResponse.swift
 //  CoinService
 //
-//  Created by Thiago Gasbarro Jesus on 22/01/21.
+//  Created by Thiago Gasbarro Jesus on 27/01/21.
 //
-
-import Foundation
 
 enum ServerResponse {
     case success(model: CoinModel)
@@ -19,4 +17,5 @@ enum ServerResponse {
         let msgError:String
         let statusCode:Int
     }
+
 

@@ -21,6 +21,8 @@
 
 /* Begin PBXBuildFile section */
 		06A5825625BB114D0095BCF1 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A5825525BB114D0095BCF1 /* CoinModel.swift */; };
+		06DA269925C189BA00D8AC15 /* ParseCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA269725C189BA00D8AC15 /* ParseCoin.swift */; };
+		06DA269A25C189BA00D8AC15 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA269825C189BA00D8AC15 /* ServerResponse.swift */; };
 		0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115BD94B27DC6EBB4FD32836F4C06821 /* ParameterEncoding.swift */; };
 		132E0F619E4338E5D1B27E4C72076B3F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639390F11970B963A3894C50F3FE8D98 /* Notifications.swift */; };
 		1945CD5D63A1C164AEAAA9A33E85571E /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AABA40121EB489C19EE657C26797B47 /* Alamofire-dummy.m */; };
@@ -92,6 +94,8 @@
 /* Begin PBXFileReference section */
 		025DC3CD2355009445435CB5889433AF /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		06A5825525BB114D0095BCF1 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoinModel.swift; path = CoinService/Classes/CoinModel.swift; sourceTree = "<group>"; };
+		06DA269725C189BA00D8AC15 /* ParseCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseCoin.swift; path = CoinService/Classes/ParseCoin.swift; sourceTree = "<group>"; };
+		06DA269825C189BA00D8AC15 /* ServerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerResponse.swift; path = CoinService/Classes/ServerResponse.swift; sourceTree = "<group>"; };
 		079ED6791A22FA96B60EE89D4B74E198 /* CoinService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoinService.release.xcconfig; sourceTree = "<group>"; };
 		0B9942DE3917EC94B1F46848BA782A41 /* CoinService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoinService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		115BD94B27DC6EBB4FD32836F4C06821 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -303,6 +307,8 @@
 			children = (
 				975EFC1079ED6C8C131A2CFF7A3468A0 /* CoinAPI.swift */,
 				06A5825525BB114D0095BCF1 /* CoinModel.swift */,
+				06DA269725C189BA00D8AC15 /* ParseCoin.swift */,
+				06DA269825C189BA00D8AC15 /* ServerResponse.swift */,
 				244ED7F2C614E8E6EDAB3B76DBA12623 /* Pod */,
 				6563BE75379B9B1EE0B489C29863A64F /* Support Files */,
 			);
@@ -553,7 +559,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A5825625BB114D0095BCF1 /* CoinModel.swift in Sources */,
+				06DA269925C189BA00D8AC15 /* ParseCoin.swift in Sources */,
 				C96484F9F13BCA5350DF93523305B7B2 /* CoinAPI.swift in Sources */,
+				06DA269A25C189BA00D8AC15 /* ServerResponse.swift in Sources */,
 				3D39FE0BD9D79174C5445B4F3A1BE4A5 /* CoinService-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
